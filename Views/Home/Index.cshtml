@@ -1,0 +1,45 @@
+@model StockCare.Controllers.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>Resumen</h2>
+        <p>Total de productos: <strong>@Model.TotalProducts</strong></p>
+        <p>Productos con stock bajo: <strong>@Model.LowStockCount</strong></p>
+
+        <h3>Productos con stock bajo</h3>
+        <table class="table table-sm">
+            <thead><tr><th>Nombre</th><th>Stock</th><th>Mínimo</th></tr></thead>
+            <tbody>
+                @foreach(var p in Model.LowStockProducts)
+                {
+                    <tr class="table-danger"><td>@p.Name</td><td>@p.CurrentStock</td><td>@p.MinimumStock</td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-4">
+        <h3>Top vendidos</h3>
+        <ul class="list-group">
+            @foreach(var t in Model.TopSold)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">@t.Name <span class="badge bg-primary rounded-pill">@t.Quantity</span></li>
+            }
+        </ul>
+
+        <h3 class="mt-3">Rentabilidad</h3>
+        <ul class="list-group">
+            @foreach(var r in Model.Profitability)
+            {
+                <li class="list-group-item">
+                    <div>@r.Name — Vendidos: @r.SoldQty</div>
+                    <small>Ganancia/unidad: @r.ProfitPerUnit.ToString("C") — Total: @r.TotalProfit.ToString("C")</small>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

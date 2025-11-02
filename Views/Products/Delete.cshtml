@@ -1,0 +1,18 @@
+@model StockCare.Models.Product
+
+@{
+    ViewData["Title"] = "Borrar Producto";
+}
+
+<h2>¿Borrar producto?</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <p>@Model.Description</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Borrar</button>
+    <a class="btn btn-secondary" href="/Products">Cancelar</a>
+</form>

@@ -1,0 +1,48 @@
+# Build results
+bin/
+obj/
+out/
+publish/
+*.log
+
+# IDE-specific
+.vs/
+.idea/
+.vscode/
+
+# User-specific
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+project.lock.json
+packages/
+
+# Databases
+*.db
+*.mdf
+*.ldf
+
+# Configuration files
+#  Mantener appsettings.json y appsettings.Production.json en el repo
+#  Ignorar solo los de desarrollo o locales
+appsettings.Development.json
+appsettings.*.Local.json
+secrets.json
+
+# Certificates
+*.pfx
+*.cer
+*.key
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db

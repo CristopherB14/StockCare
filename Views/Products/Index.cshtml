@@ -1,0 +1,37 @@
+@model IEnumerable<StockCare.Models.Product>
+
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<div class="d-flex justify-content-between mb-3">
+    <h2>Productos</h2>
+    <a class="btn btn-primary" href="/Products/Create">Crear Producto</a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio Venta</th>
+            <th>Stock</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr class="@(item.CurrentStock < item.MinimumStock ? "table-warning" : "")">
+            <td>@item.Name</td>
+            <td>@item.Category</td>
+            <td>@item.SalePrice.ToString("C")</td>
+            <td>@item.CurrentStock</td>
+            <td>
+                <a class="btn btn-sm btn-secondary" href="/Products/Details/@item.Id">Ver</a>
+                <a class="btn btn-sm btn-info" href="/Products/Edit/@item.Id">Editar</a>
+                <a class="btn btn-sm btn-danger" href="/Products/Delete/@item.Id">Borrar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

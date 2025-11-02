@@ -1,0 +1,45 @@
+@model StockCare.Models.Product
+
+@{
+    ViewData["Title"] = "Detalles del Producto";
+}
+
+<h2>@Model.Name</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Categoría</dt>
+    <dd class="col-sm-9">@Model.Category</dd>
+
+    <dt class="col-sm-3">Descripción</dt>
+    <dd class="col-sm-9">@Model.Description</dd>
+
+    <dt class="col-sm-3">Precio Compra</dt>
+    <dd class="col-sm-9">@Model.PurchasePrice.ToString("C")</dd>
+
+    <dt class="col-sm-3">Precio Venta</dt>
+    <dd class="col-sm-9">@Model.SalePrice.ToString("C")</dd>
+
+    <dt class="col-sm-3">Stock Actual</dt>
+    <dd class="col-sm-9">@Model.CurrentStock</dd>
+
+    <dt class="col-sm-3">Stock Mínimo</dt>
+    <dd class="col-sm-9">@Model.MinimumStock</dd>
+</dl>
+
+<h3>Movimientos</h3>
+<table class="table table-sm">
+    <thead><tr><th>Tipo</th><th>Cantidad</th><th>Fecha</th><th>Notas</th></tr></thead>
+    <tbody>
+        @foreach(var m in Model.Movements ?? Enumerable.Empty<StockCare.Models.StockMovement>())
+        {
+            <tr>
+                <td>@m.Type</td>
+                <td>@m.Quantity</td>
+                <td>@m.Date.ToLocalTime()</td>
+                <td>@m.Notes</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-secondary" href="/Products">Volver</a>

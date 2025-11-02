@@ -1,0 +1,47 @@
+@model StockCare.Models.Product
+
+@{
+    ViewData["Title"] = "Editar Producto";
+}
+
+<h2>Editar Producto</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Categoría</label>
+        <input asp-for="Category" class="form-control" />
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Precio Compra</label>
+            <input asp-for="PurchasePrice" class="form-control" />
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Precio Venta</label>
+            <input asp-for="SalePrice" class="form-control" />
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Stock Actual</label>
+            <input asp-for="CurrentStock" class="form-control" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Stock Mínimo</label>
+        <input asp-for="MinimumStock" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secondary" href="/Products">Cancelar</a>
+</form>
+
+<partial name="_ValidationScriptsPartial" />
