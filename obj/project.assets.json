@@ -10541,19 +10541,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/cristopher/.nuget/packages/": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cristopher/StockCare/StockCare.csproj",
+      "projectUniqueName": "/workspaces/StockCare/StockCare.csproj",
       "projectName": "StockCare",
-      "projectPath": "/Users/cristopher/StockCare/StockCare.csproj",
-      "packagesPath": "/Users/cristopher/.nuget/packages/",
-      "outputPath": "/Users/cristopher/StockCare/obj/",
+      "projectPath": "/workspaces/StockCare/StockCare.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/StockCare/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cristopher/.nuget/NuGet/NuGet.Config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -10576,8 +10576,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net7.0": {
@@ -10615,7 +10614,7 @@
             "version": "[7.0.20, 7.0.20]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
             "version": "[7.0.20, 7.0.20]"
           },
           {
@@ -10631,7 +10630,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
       }
     }
   }

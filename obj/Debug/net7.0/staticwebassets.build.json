@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"4GNSvLZhV+JEOfNPctSb4GPjDLXZOaqTyJ5Kqdie6OQ=","Source":"StockCare","BasePath":"_content/StockCare","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "ZLe9k5dKCw5XhiFGshboR4XK8aNHdi+dR8RT/gLp+hY=",
+  "Source": "StockCare",
+  "BasePath": "_content/StockCare",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -9,61 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StockCare
 build_property.RootNamespace = StockCare
-build_property.ProjectDir = /Users/cristopher/StockCare/
+build_property.ProjectDir = /workspaces/StockCare/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/cristopher/StockCare
+build_property.MSBuildProjectDirectory = /workspaces/StockCare
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 7.0
-build_property.EnableCodeStyleSeverity = 
 
-[/Users/cristopher/StockCare/Views/Home/Index.cshtml]
+[/workspaces/StockCare/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Movements/Create.cshtml]
+[/workspaces/StockCare/Views/Movements/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92ZW1lbnRzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Movements/Index.cshtml]
+[/workspaces/StockCare/Views/Movements/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92ZW1lbnRzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Products/Create.cshtml]
+[/workspaces/StockCare/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Products/Delete.cshtml]
+[/workspaces/StockCare/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Products/Details.cshtml]
+[/workspaces/StockCare/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Products/Edit.cshtml]
+[/workspaces/StockCare/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Products/Index.cshtml]
+[/workspaces/StockCare/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Shared/_Layout.cshtml]
+[/workspaces/StockCare/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/workspaces/StockCare/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/_ViewImports.cshtml]
+[/workspaces/StockCare/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cristopher/StockCare/Views/_ViewStart.cshtml]
+[/workspaces/StockCare/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
