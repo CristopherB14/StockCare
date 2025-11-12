@@ -4,42 +4,53 @@
     ViewData["Title"] = "Detalles del Producto";
 }
 
-<h2>@Model.Name</h2>
+<div class="container bg-dark text-light p-4 rounded shadow-sm">
+    <h2 class="mb-4">@Model.Name</h2>
 
-<dl class="row">
-    <dt class="col-sm-3">Categoría</dt>
-    <dd class="col-sm-9">@Model.Category</dd>
+    <dl class="row mb-4">
+        <dt class="col-sm-3 text-secondary">Categoría</dt>
+        <dd class="col-sm-9">@Model.Category</dd>
 
-    <dt class="col-sm-3">Descripción</dt>
-    <dd class="col-sm-9">@Model.Description</dd>
+        <dt class="col-sm-3 text-secondary">Descripción</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
 
-    <dt class="col-sm-3">Precio Compra</dt>
-    <dd class="col-sm-9">@Model.PurchasePrice.ToString("C")</dd>
+        <dt class="col-sm-3 text-secondary">Precio Compra</dt>
+        <dd class="col-sm-9">@Model.PurchasePrice.ToString("C")</dd>
 
-    <dt class="col-sm-3">Precio Venta</dt>
-    <dd class="col-sm-9">@Model.SalePrice.ToString("C")</dd>
+        <dt class="col-sm-3 text-secondary">Precio Venta</dt>
+        <dd class="col-sm-9">@Model.SalePrice.ToString("C")</dd>
 
-    <dt class="col-sm-3">Stock Actual</dt>
-    <dd class="col-sm-9">@Model.CurrentStock</dd>
+        <dt class="col-sm-3 text-secondary">Stock Actual</dt>
+        <dd class="col-sm-9">@Model.CurrentStock</dd>
 
-    <dt class="col-sm-3">Stock Mínimo</dt>
-    <dd class="col-sm-9">@Model.MinimumStock</dd>
-</dl>
+        <dt class="col-sm-3 text-secondary">Stock Mínimo</dt>
+        <dd class="col-sm-9">@Model.MinimumStock</dd>
+    </dl>
 
-<h3>Movimientos</h3>
-<table class="table table-sm">
-    <thead><tr><th>Tipo</th><th>Cantidad</th><th>Fecha</th><th>Notas</th></tr></thead>
-    <tbody>
-        @foreach(var m in Model.Movements ?? Enumerable.Empty<StockCare.Models.StockMovement>())
-        {
+    <h4 class="mb-3">Historial de Movimientos</h4>
+    <table class="table table-dark table-striped table-bordered align-middle">
+        <thead>
             <tr>
-                <td>@m.Type</td>
-                <td>@m.Quantity</td>
-                <td>@m.Date.ToLocalTime()</td>
-                <td>@m.Notes</td>
+                <th>Tipo</th>
+                <th>Cantidad</th>
+                <th>Fecha</th>
+                <th>Notas</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var m in Model.Movements ?? Enumerable.Empty<StockCare.Models.StockMovement>())
+            {
+                <tr>
+                    <td>@m.Type</td>
+                    <td>@m.Quantity</td>
+                    <td>@m.Date.ToLocalTime()</td>
+                    <td>@m.Notes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
-<a class="btn btn-secondary" href="/Products">Volver</a>
+    <div class="d-flex justify-content-end mt-4">
+        <a class="btn btn-outline-light" href="/Products">Volver</a>
+    </div>
+</div>

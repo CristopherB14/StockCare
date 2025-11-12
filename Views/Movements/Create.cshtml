@@ -1,43 +1,44 @@
 @model StockCare.Models.StockMovement
-
 @{
     ViewData["Title"] = "Nuevo Movimiento";
 }
 
-<h2>Nuevo Movimiento</h2>
+<div class="container bg-dark text-light p-4 rounded shadow-sm">
+    <h2 class="mb-4">Nuevo Movimiento</h2>
 
-<form asp-action="Create" method="post">
-    <div class="mb-3">
-        <label class="form-label">Producto</label>
-        <select asp-for="ProductId" class="form-select" asp-items="ViewBag.Products"></select>
-        <span asp-validation-for="ProductId" class="text-danger"></span>
-    </div>
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label class="form-label">Producto</label>
+            <select asp-for="ProductId" class="form-select bg-secondary text-light" asp-items="ViewBag.Products"></select>
+            <span asp-validation-for="ProductId" class="text-danger"></span>
+        </div>
 
-    <div class="mb-3">
-        <label class="form-label">Tipo</label>
-        <select asp-for="Type" class="form-select">
-            <option value="0">Compra</option>
-            <option value="1">Venta</option>
-        </select>
-    </div>
+        <div class="mb-3">
+            <label class="form-label">Tipo</label>
+            <select asp-for="Type" class="form-select bg-secondary text-light">
+                <option value="0">Compra</option>
+                <option value="1">Venta</option>
+            </select>
+        </div>
 
-    <div class="mb-3">
-        <label class="form-label">Cantidad</label>
-        <input asp-for="Quantity" class="form-control" />
-    </div>
+        <div class="mb-3">
+            <label class="form-label">Cantidad</label>
+            <input asp-for="Quantity" class="form-control bg-secondary text-light" />
+        </div>
 
-    <div class="mb-3">
-        <label class="form-label">Fecha</label>
-        <input asp-for="Date" class="form-control" type="datetime-local" />
-    </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha</label>
+            <input asp-for="Date" type="datetime-local" class="form-control bg-secondary text-light" />
+        </div>
 
-    <div class="mb-3">
-        <label class="form-label">Notas</label>
-        <textarea asp-for="Notes" class="form-control"></textarea>
-    </div>
+        <div class="mb-3">
+            <label class="form-label">Notas</label>
+            <textarea asp-for="Notes" class="form-control bg-secondary text-light"></textarea>
+        </div>
 
-    <button class="btn btn-primary">Registrar</button>
-    <a class="btn btn-secondary" href="/Movements">Cancelar</a>
-</form>
+        <button class="btn btn-primary me-2">Registrar</button>
+        <a class="btn btn-outline-light" href="/Movements">Cancelar</a>
+    </form>
 
-<partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
+</div>

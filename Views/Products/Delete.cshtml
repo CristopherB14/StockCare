@@ -4,15 +4,21 @@
     ViewData["Title"] = "Borrar Producto";
 }
 
-<h2>¿Borrar producto?</h2>
+<div class="container bg-dark text-light p-4 rounded shadow-sm">
+    <h2 class="mb-4 text-danger">¿Borrar producto?</h2>
 
-<div>
-    <h4>@Model.Name</h4>
-    <p>@Model.Description</p>
+    <div class="mb-3">
+        <h4 class="fw-bold">@Model.Name</h4>
+        <p class="text-secondary">@Model.Description</p>
+    </div>
+
+    <div class="alert alert-danger">
+        <strong>Atención:</strong> Esta acción no se puede deshacer.
+    </div>
+
+    <form asp-action="Delete" method="post" class="d-flex justify-content-end">
+        <input type="hidden" asp-for="Id" />
+        <a class="btn btn-outline-light me-2" href="/Products">Cancelar</a>
+        <button type="submit" class="btn btn-danger">Borrar Definitivamente</button>
+    </form>
 </div>
-
-<form asp-action="Delete" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit" class="btn btn-danger">Borrar</button>
-    <a class="btn btn-secondary" href="/Products">Cancelar</a>
-</form>

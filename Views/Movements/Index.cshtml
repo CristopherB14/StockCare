@@ -1,33 +1,34 @@
 @model IEnumerable<StockCare.Models.StockMovement>
-
 @{
     ViewData["Title"] = "Movimientos";
 }
 
-<div class="d-flex justify-content-between mb-3">
-    <h2>Movimientos</h2>
-    <a class="btn btn-primary" href="/Movements/Create">Nuevo Movimiento</a>
-</div>
+<div class="container bg-dark text-light p-4 rounded shadow-sm">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Movimientos</h2>
+        <a class="btn btn-primary" href="/Movements/Create">Nuevo Movimiento</a>
+    </div>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Fecha</th>
-            <th>Producto</th>
-            <th>Tipo</th>
-            <th>Cantidad</th>
-            <th>Notas</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model) {
-        <tr>
-            <td>@item.Date.ToLocalTime()</td>
-            <td>@item.Product?.Name</td>
-            <td>@item.Type</td>
-            <td>@item.Quantity</td>
-            <td>@item.Notes</td>
-        </tr>
-    }
-    </tbody>
-</table>
+    <table class="table table-dark table-hover align-middle">
+        <thead class="table-secondary text-dark">
+            <tr>
+                <th>Fecha</th>
+                <th>Producto</th>
+                <th>Tipo</th>
+                <th>Cantidad</th>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>@item.Date.ToLocalTime()</td>
+                <td>@item.Product?.Name</td>
+                <td>@item.Type</td>
+                <td>@item.Quantity</td>
+                <td>@item.Notes</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
