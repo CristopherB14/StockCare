@@ -81,7 +81,7 @@ erDiagram
     MOVIMIENTO {
         int Id
         int ProductoId
-        string Tipo  // Entrada o Salida
+        string Tipo  
         int Cantidad
         datetime Fecha
         string Motivo
