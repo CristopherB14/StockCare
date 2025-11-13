@@ -1,4 +1,3 @@
-````markdown
 # 🧾 StockCare
 
 [![Project Status](https://img.shields.io/badge/status-alpha-blue?style=flat-square)](https://github.com/CristopherB14/StockCare)
@@ -39,18 +38,17 @@ Incluye funcionalidades de **alertas de bajo stock**, **registro de rentabilidad
 ## ⚙️ Instalación y ejecución
 
 1. **Clonar el repositorio**
-   ```bash
+   
    git clone https://github.com/CristopherB14/StockCare.git
    cd StockCare
-````
 
-2. **Ejecutar la aplicación**
+3. **Ejecutar la aplicación**
 
    ```bash
    dotnet run
    ```
 
-3. **Acceder desde el navegador**
+4. **Acceder desde el navegador**
 
    ```
    http://localhost:<puerto>
