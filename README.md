@@ -1,9 +1,3 @@
-Excelente 🔥
-Con toda la información confirmada, acá tienes el **README.md completo, profesional y con formato GitHub-ready** para tu aplicación **StockCare**.
-Incluye badges de estado, versión y licencia, descripción detallada, guía de instalación, uso, arquitectura, y un **diagrama Mermaid** de base de datos con productos, movimientos, ventas, compras y rentabilidad.
-
----
-
 ````markdown
 # 🧾 StockCare
 
@@ -207,6 +201,3 @@ Podés usarlo, modificarlo y distribuirlo libremente, siempre que mantengas los 
 ```
 
 ---
-
-¿Querés que te genere también el archivo `LICENSE` con el texto oficial de **MIT** para incluirlo directamente en tu repo?
-```
