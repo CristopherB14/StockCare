@@ -38,10 +38,12 @@ Incluye funcionalidades de **alertas de bajo stock**, **registro de rentabilidad
 ## ⚙️ Instalación y ejecución
 
 1. **Clonar el repositorio**
-   
+
+   ```bash
    git clone https://github.com/CristopherB14/StockCare.git
    cd StockCare
-
+   ```
+   
 3. **Ejecutar la aplicación**
 
    ```bash
@@ -135,8 +137,6 @@ erDiagram
 ---
 
 ## 🖼️ Capturas de pantalla
-
-> *(Reemplazá estas imágenes por tus propias capturas reales del sistema)*
 
 ![Dashboard](docs/images/dashboard.png)
 ![Gestión de productos](docs/images/products.png)
