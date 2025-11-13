@@ -196,6 +196,3 @@ Podés usarlo, modificarlo y distribuirlo libremente, siempre que mantengas los 
 
 ⭐ **Si te resulta útil, no olvides dejar una estrella en el repositorio.**
 
-```
-
----
